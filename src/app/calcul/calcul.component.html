@@ -1,0 +1,10 @@
+<label>Donnez un premier nombre : </label>
+<input type="number" [value]="val1"(input)="update($event)"/>
+<br>
+<p>Le carré est: {{val1 * val1}}</p>
+<label>Donnez un duexiéme nombre : </label>
+<input type="number" [value]="val2" (input)="update2($event)"/>
+<br>
+<button (click)="somme()"[disabled]="((val1 ==NULL)|| val2==0) || ((val2==NULL)|| val2==0)">Somme</button>
+<br>
+<p>Somme: {{som}}</p>

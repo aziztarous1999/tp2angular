@@ -1,0 +1,10 @@
+<h2>{{nom}}</h2>
+<img [src]="image" width="150px" height="150px"/>
+<p>Age : {{age}}</p>
+<label for="per">mineure</label>
+<input type="checkbox" id="per" name="per" [disabled]="c" >
+<br>
+<!--<input type="text" [value]="text"(input)="update($event)">-->
+<input type="text" [(ngModel)]="text">
+<br>
+{{text}}

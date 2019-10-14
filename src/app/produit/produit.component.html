@@ -1,0 +1,9 @@
+<label>Donnez un premier nombre : </label>
+<input type="number" [value]="val1"(input)="update($event)"/>
+<br>
+<label>Donnez un duexiéme nombre : </label>
+<input type="number" [value]="val2" (input)="update2($event)"/>
+<br>
+<button (click)="produit()">Calculer</button>
+<br>
+<p>Le produit est: {{res}}</p>

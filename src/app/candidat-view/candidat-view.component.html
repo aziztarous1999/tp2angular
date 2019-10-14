@@ -1,0 +1,17 @@
+<!--
+    <table>
+    <tr *ngFor="let a of tabCandidats;let myindex = index;let evenrecord = even ;let oddrecord = odd ;let firstclass=first "
+     [ngClass]="{odd:oddrecord,even:evenrecord,first:firstclass}"><td>{{myindex+1}}</td><td>{{a.nom }}</td></tr>
+
+</table>
+-->
+<table>
+    <tr *ngFor="let a of tabCandidats;">
+
+<td><img [src]="a.image" width="150px"height="150px"/></td>
+<td><p>nom: {{a.nom}}</p></td>
+<td><input type="checkbox"  (click)="a.parti=!a.parti;" [checked]="a.parti"><label>indépendant</label></td>
+<td><p>Nb Followers: {{a.nb}}<button (click)="a.nb=a.nb+1">Follow</button></p></td>
+</tr>
+<tr><p>Nombre de candidats indépendants : {{ind()}} </p></tr>
+</table>

@@ -1,0 +1,91 @@
+footer
+{
+margin:0;
+padding:0;
+	width:100%;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+}
+div
+{
+	position:relative;
+	width:180px;
+	height:320px;
+	background: rgba(0,0,0,.1);
+	transform:rotate(-30deg) skew(25deg) scale(.8);
+	transition:0.5s;
+	margin-top:150px;
+}
+span{
+    background-image: url("../../assets/naruto.jpg");
+    background-size: 100% 100%;
+        position:absolute;
+        width:100%;
+        height:100%;
+        transition:0.55s;
+    
+}
+div:hover span:nth-child(4)
+{
+transform:translate(80px,-80px);
+opacity:1;
+}
+div:hover span:nth-child(3)
+{
+transform:translate(60px,-60px);
+opacity:.8;
+}
+div:hover span:nth-child(2)
+{
+transform:translate(40px,-40px);
+opacity:.5;
+}
+div:hover span:nth-child(1)
+{
+transform:translate(20px,-20px);
+opacity:.3;
+}
+header
+{
+margin:0;
+padding:0;
+	width:100%;
+	height:100vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    background:red;
+}
+header p
+{
+margin:0;
+padding:0;
+	width:200px;
+	height:200px;
+    border-radius: 50%;
+    background:linear-gradient(darkblue,blue,lightblue);
+    animation:animate  0.5s infinite linear ;
+}
+header p span
+{
+    width:150px;
+	height:150px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    background:#240229;
+    border-radius:50%;
+}
+@keyframes animate{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
